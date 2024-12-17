@@ -37,5 +37,12 @@ public class IngressoTest extends SistemaDeIngressosApplicationTests {
         assertEquals(TipoIngresso.MEIA, ingressoMeia.getTipo());
         assertFalse(ingressoMeia.isVendido());
     }
+    
+    @Test
+    public void testVenderIngresso() {
+        Ingresso ingressoMeia = new Ingresso(TipoIngresso.MEIA, 10.0);
 
+        ingressoMeia.setVendido(true);
+        assertTrue(ingressoMeia.isVendido());
+    }
 }
