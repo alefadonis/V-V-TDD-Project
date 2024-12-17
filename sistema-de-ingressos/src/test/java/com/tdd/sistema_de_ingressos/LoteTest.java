@@ -60,7 +60,7 @@ public class LoteTest extends SistemaDeIngressosApplicationTests {
 	}
 	
 	@Test(expected = Exception.class)
-	public void testVenderIngressos() {
+	public void testVenderIngressosAcimaLimite() {
 		Lote lote = new Lote(100, 10, 0.2);
 		
 		assertEquals(lote.size(), 100, 0);
