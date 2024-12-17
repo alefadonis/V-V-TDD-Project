@@ -10,8 +10,8 @@ public class IngressoTest {
         Ingresso ingressoNormal = new Ingresso(TipoIngresso.NORMAL, 10.0);
 
         assertEquals(10.0, ingressoNormal.getPreco());
-        assertEquals(TipoIngresso.NORMAL, ingresso.getTipo());
-        assertFalse(ingresso.isVendido());
+        assertEquals(TipoIngresso.NORMAL, ingressoNormal.getTipo());
+        assertFalse(ingressoNormal.isVendido());
     }
 
     @Test
