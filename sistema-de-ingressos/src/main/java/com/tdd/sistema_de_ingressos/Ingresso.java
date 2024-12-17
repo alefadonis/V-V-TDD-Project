@@ -2,6 +2,7 @@ package com.tdd.sistema_de_ingressos;
 
 public class Ingresso {
 
+  private int id;
 	private TipoIngresso tipo;
 	private double preco;
 	private boolean vendido;
