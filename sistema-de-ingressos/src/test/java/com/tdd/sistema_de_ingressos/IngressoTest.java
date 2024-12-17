@@ -5,13 +5,13 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class IngressoTest {
+public class IngressoTest extends SistemaDeIngressosApplicationTests {
 
-	@Before
-	public void setUp() throws Exception {
-	}
+    @Before
+    public void setUp() throws Exception {
+    }
 
-	@Test
+    @Test
     public void testCriarIngressoNormal() {
         Ingresso ingressoNormal = new Ingresso(TipoIngresso.NORMAL, 10.0);
 
